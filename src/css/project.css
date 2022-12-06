@@ -1,0 +1,26 @@
+.projdiv {
+    width: 95vw;
+    display: inline-flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 35px;
+    transition: .5s;
+}
+
+.projdiv:hover {
+    cursor: pointer;
+    transform: scaleX(1.001) scaleY(1.001);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pic {
+    margin: 5px 5px;
+    width: 10rem;
+    height: 8rem;
+    border-radius: 5px;
+}
+
+.content {
+    padding-left: 1.2rem;
+}
