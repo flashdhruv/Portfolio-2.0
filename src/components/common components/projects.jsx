@@ -1,13 +1,19 @@
 import React from 'react';
 import "../../css/project.css";
 const Project = (props) => {
+
+    const handleClick = (url) => {
+        window.location.href = url;
+    }
+
     return ( 
-        <div className='projdiv'>
+        <div className='projdiv' onClick={() => handleClick(props.link)}>
             <img className='pic' src={props.image} alt="logo for the project"/>
             <div className='content'>
-                <p>{props.title}</p>
-                <p>{props.summary}</p>
-                <p>{props.summary}</p>
+                <h3>{props.title}</h3>
+                <p>{props.line1}</p>
+                <p>{props.line2}</p>
+                <p>{props.line3}</p>
             </div>
         </div>
      );

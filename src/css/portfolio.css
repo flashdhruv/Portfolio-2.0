@@ -208,3 +208,11 @@ h2 {
     margin-top: 40px;
     margin-left: 35px;
 }
+.about {
+    width: 95vw;
+    margin-left: 35px;
+}
+
+li {
+    margin-top: 5px;
+}

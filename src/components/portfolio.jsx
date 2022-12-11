@@ -3,14 +3,13 @@ import "../css/portfolio.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter, faYoutube  } from '@fortawesome/free-brands-svg-icons';
 import banner from '../images/banner.jpg';
-import vette from '../images/vette.jpg';
+import snake from '../images/snakelogo.png';
+import carcalc from '../images/carcalc.png';
 import Project from './common components/projects';
+import resume from '../images/resume.pdf';
 
 const Portfolio = () => {
 
-    const summary  = `some stuff
-    and tex
-    and more text`;
 
     return ( 
         <React.Fragment>
@@ -18,7 +17,7 @@ const Portfolio = () => {
             <ul className='nav-list'>
                 <li className='float-left'><p className='name'>Dhruv Bahl</p></li>
                 <li className='float-right'><a href="#Projects">Projects</a></li>
-                <li className='float-right'><a href="#Resume">Resume</a></li>
+                <li className='float-right'><a href= {resume} >Resume</a></li>
             </ul>
         </div>
 
@@ -44,17 +43,33 @@ const Portfolio = () => {
             <img className="banner" src={banner} alt="beautiful banner" />
         </div>
 
+        <h2>About</h2>
+        <div className='about'>
+            <ul>
+                <li>Hi, my name is Dhruv!</li>
+                <li>Soon to be grad with a Bachelor's of Science in Computer Science. (May 2023)</li>
+                <li>My aspirations for the future revolve around a role as a software developer with an energetic and diverse team. I would like the projects that I work on to have a positive impact on society and allow me to be creative.</li>
+                <li>In my free time you can find me at the gym or cheering for Manchester united!</li>
+            </ul>
+        </div>
+
         <div className='projects' id='Projects'>
             <h2>Projects</h2>
             <Project 
-            image={banner} 
-            title="A project Title" 
-            summary={summary}/>
+            image={carcalc} 
+            title="The Monthly Car Payment Calculator" 
+            line1="The aim of the project was to understand React hooks."
+            line2="It's an easy way to obtain and estimate for the monthly payments on a car."
+            line3="The tech stack includes: React, HTML, CSS"
+            link="https://flashdhruv.github.io/car_calc/"/>
 
             <Project 
-            image={vette} 
-            title="Another project" 
-            summary={summary}/>
+            image={snake} 
+            title="The Snake Game" 
+            line1="The aim of the project was to practice OOP and GUI in Java in a more practical way."
+            line2="The game follows the rules defined in the game that was available on old Nokia devices."
+            line3="The tech stack  includes: Java"
+            link="https://github.com/flashdhruv/Java-OOP-Snake"/>
         </div>
 
         </React.Fragment>
