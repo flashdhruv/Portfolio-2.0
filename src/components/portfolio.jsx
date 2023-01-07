@@ -7,6 +7,8 @@ import snake from '../images/snakelogo.png';
 import carcalc from '../images/carcalc.png';
 import Project from './common components/projects';
 import resume from '../images/resume.pdf';
+import letterOfRecommendation from '../images/LofR.pdf';
+import employeePortal from '../images/employeeportal.jpg';
 
 const Portfolio = () => {
 
@@ -18,6 +20,7 @@ const Portfolio = () => {
                 <li className='float-left'><p className='name'>Dhruv Bahl</p></li>
                 <li className='float-right'><a href="#Projects">Projects</a></li>
                 <li className='float-right'><a href= {resume} >Resume</a></li>
+                <li className='float-right'><a href= {letterOfRecommendation} >Recommmendations</a></li>
             </ul>
         </div>
 
@@ -61,7 +64,8 @@ const Portfolio = () => {
             line1="The aim of the project was to understand React hooks."
             line2="It's an easy way to obtain and estimate for the monthly payments on a car."
             line3="The tech stack includes: React, HTML, CSS"
-            link="https://flashdhruv.github.io/car_calc/"/>
+            link="https://flashdhruv.github.io/car_calc/"
+            />
 
             <Project 
             image={snake} 
@@ -69,7 +73,17 @@ const Portfolio = () => {
             line1="The aim of the project was to practice OOP and GUI in Java in a more practical way."
             line2="The game follows the rules defined in the game that was available on old Nokia devices."
             line3="The tech stack  includes: Java"
-            link="https://github.com/flashdhruv/Java-OOP-Snake"/>
+            link="https://github.com/flashdhruv/Java-OOP-Snake"
+            />
+
+            <Project 
+            image={employeePortal}
+            title="An Admin Portal"
+            line1="The aim is to use TypeScript and TSX over JS and JSX as well as Axios for Api calls"
+            line2="The webpage allows deletion and addition of users. Editing and better routing is in the pipeline"
+            line3="The tech stack includes: React, TypeScript, HTML/CSS, Axios"
+            link="https://flashdhruv.github.io/employee-portal/"
+            />
         </div>
 
         </React.Fragment>
